@@ -1,10 +1,12 @@
 
 const printName = function() {
-    let helloName = "hello Jhon"
+    let helloName;
     inner = function() {
+        helloName = "hello Jhon";
+        console.log(helloName);
         return helloName;
     }
     return inner;
 }
 
-console.log(printName()());
+printName()();
